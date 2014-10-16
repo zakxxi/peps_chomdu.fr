@@ -610,3 +610,12 @@ footer ul li:last-child
         text-align: center;
     }
 }
+
+
+@media (min-width:992px)
+{
+    footer
+    {
+        text-align: right;
+    }
+}
