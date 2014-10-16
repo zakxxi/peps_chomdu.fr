@@ -19,6 +19,7 @@
 html
 {
     font-family: 'Arial', 'Helvetica', sans-serif;
+
 }
 
 body
@@ -62,22 +63,6 @@ a, a:hover, a:focus
     color: #35b0e8;
     cursor: pointer;
 }
-
-.btn-default {
-    color: #35b0e8;
-    background-color: #fff;
-    border-color: #35b0e8;
-}
-
-
-.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default
-{
-    color: #35b0e8;
-    background-color: #eee;
-    border-color: #35b0e8;
-}
-
-
 
 .btn-primary
 {
@@ -218,6 +203,20 @@ a, a:hover, a:focus
     color: #959595;
 }
 
+.nav-tabs {
+    margin-top: 10px;
+
+}
+
+.nav-tabs>li>a {
+    color: #959595;
+
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+color: #35b0e8;
+
+}
 
 .panel
 {
@@ -239,12 +238,6 @@ a, a:hover, a:focus
 .panel-footer
 {
     background-color: #fff;
-}
-
-.radio label, .checkbox label
-{
-    padding-left: 40px;
-    padding-bottom: 20px;
 }
 
 .form-control
@@ -329,6 +322,7 @@ a, a:hover, a:focus
     padding-right: 5px;
 }
 
+
 .jumbotron.header
 {
     margin-bottom: 0;
@@ -355,7 +349,6 @@ a, a:hover, a:focus
     color: #aaaaaa;
     margin-top: 10px;
     padding: 10px;
-    min-height: 130px;
     margin-bottom: 10px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -420,10 +413,6 @@ a, a:hover, a:focus
     margin-top: 10px;
 }
 
-.homeBlock h5
-{
-    display: inline;
-}
 
 .homeBlock .badge
 {
@@ -434,6 +423,13 @@ a, a:hover, a:focus
     -moz-border-radius: 0;
     -o-border-radius: 0;
     -ms-border-radius: 0;
+}
+
+
+.homeBlock .radio label, .homeBlock .checkbox label
+{
+    padding-left: 40px;
+    padding-bottom: 20px;
 }
 
 .findCandidate .panel-heading, .findJob .panel-heading
@@ -452,16 +448,37 @@ a, a:hover, a:focus
     margin-bottom:10px;
 }
 
+.recrutLive h5
+{
+    display: inline;
+}
+
 .recrutLive:last-child
 {
     border-bottom: none;
 }
 
+
+.recrutLive .btn-default {
+    color: #35b0e8;
+    background-color: #fff;
+    border-color: #35b0e8;
+}
+
+
+.recrutLive .btn-default:hover,.recrutLive .btn-default:focus,.recrutLive .btn-default:active,.recrutLive .btn-default.active,.recrutLive .open>.dropdown-toggle.btn-default
+{
+    color: #35b0e8;
+    background-color: #eee;
+    border-color: #35b0e8;
+}
+
+
 .jumbotron.blog
 {
     padding-top: 20px;
     padding-bottom: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     background-color: #f6f6f6;
     border-top: solid 1px #e4e4e4;
     border-bottom: solid 1px #e4e4e4;
@@ -480,6 +497,8 @@ a, a:hover, a:focus
 footer
 {
     padding-bottom: 10px;
+    padding-top: 30px;
+
 }
 
 .fb img
