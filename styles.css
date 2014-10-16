@@ -19,6 +19,7 @@
 html
 {
     font-family: 'Arial', 'Helvetica', sans-serif;
+
 }
 
 body
@@ -218,6 +219,20 @@ a, a:hover, a:focus
     color: #959595;
 }
 
+.nav-tabs {
+    margin-top: 10px;
+
+}
+
+.nav-tabs>li>a {
+    color: #959595;
+
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+color: #35b0e8;
+
+}
 
 .panel
 {
@@ -461,7 +476,7 @@ a, a:hover, a:focus
 {
     padding-top: 20px;
     padding-bottom: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     background-color: #f6f6f6;
     border-top: solid 1px #e4e4e4;
     border-bottom: solid 1px #e4e4e4;
@@ -480,6 +495,8 @@ a, a:hover, a:focus
 footer
 {
     padding-bottom: 10px;
+    padding-top: 30px;
+
 }
 
 .fb img
