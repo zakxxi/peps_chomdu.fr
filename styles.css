@@ -583,8 +583,7 @@ padding-right: 5px;
     {
         margin-top: 15px;
     }
-    .navbar .nav,
-.navbar .nav > li
+    .navbar .nav, .navbar .nav > li
     {
         float: none;
         display: inline-block;
@@ -625,8 +624,14 @@ padding-right: 5px;
 
 @media (min-width:992px)
 {
-    footer .social
+    footer
     {
-        text-align: right;
+          text-align: right;
     }
+
+        .footerMenu
+    {
+          text-align: left;
+    }
+
 }
