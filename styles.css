@@ -555,6 +555,17 @@ footer ul li:last-child
     -ms-border-radius: 5px;
 }
 
+.chatMin{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.chatMin .glyphicon{
+padding-right: 5px;
+}
+
+
 /* MediaQueries
 *********************************/
 
