@@ -614,7 +614,7 @@ footer ul li:last-child
 
 @media (min-width:992px)
 {
-    footer
+    footer .social
     {
         text-align: right;
     }
