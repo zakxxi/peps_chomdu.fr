@@ -1,3 +1,5 @@
+
+
 /* CUSTOM FONTS
 *********************************/
 
@@ -19,7 +21,6 @@
 html
 {
     font-family: 'Arial', 'Helvetica', sans-serif;
-
 }
 
 body
@@ -123,6 +124,23 @@ a, a:hover, a:focus
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d97d7', endColorstr='#20b2f6',GradientType=0 );
 }
 
+.btn-success
+{
+    border-color: #35b0e8;
+    color: #fff;
+    background-color: #0aa8f2;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open > .dropdown-toggle.btn-success
+{
+    border-color: #20b2f6;
+    background-color: #20b2f6;
+}
+
 .btn-xs
 {
     font-size: 10px;
@@ -138,9 +156,33 @@ a, a:hover, a:focus
     background-color: #0aa8f2;
 }
 
+.bg-warning
+{
+    background-color: #fffde4;
+}
+
 .text-muted
 {
     color: #b0b0b0;
+}
+
+.text-danger
+{
+    color: #db3d40;
+}
+
+.text-info
+{
+    color: #35b0e8;
+}
+
+.caret
+{
+    margin-left: 8px;
+    vertical-align: middle;
+    border-top: 3px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
 }
 
 .navbar
@@ -167,12 +209,21 @@ a, a:hover, a:focus
 .navbar-default .navbar-nav > .active > a:focus
 {
     color: #35b0e8;
-    background-color: #efefef;   
-    background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 47%,#efefef 100%);}
+    background-color: #efefef;
+    background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 47%,#efefef 100%);
+}
 
-.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a
+.navbar-default .navbar-nav>li>a, 
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:active
 {
     color: #959595;
+    border-right: solid 1px #e7e7e7;
+}
+
+.navbar-default .navbar-nav>li:first-child>a
+{
+    border-left: solid 1px #e7e7e7;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
@@ -180,42 +231,51 @@ a, a:hover, a:focus
     color: #35b0e8;
 }
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus
+{
     color: #35b0e8;
-    background-color: #efefef;   
-    background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 47%,#efefef 100%);}
+    background-color: #efefef;
+    background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 47%,#efefef 100%);
+}
 
-.dropdown-menu{
+.dropdown-menu {
     font-size: 12px;
-    background-color: #efefef;       
-    background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 47%,#efefef 100%);}
+    background-color: #efefef;
+    background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 47%,#efefef 100%);
+    min-width: 250px;
+
+
 }
 
-.dropdown-menu>li>a {
+
+.dropdown-menu>li>a
+{
     color: #959595;
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus
+{
     color: #35b0e8;
 }
 
-.dropdown-menu>li>a {
+.dropdown-menu>li>a
+{
     color: #959595;
 }
 
-.nav-tabs {
+.nav-tabs
+{
     margin-top: 10px;
-
 }
 
-.nav-tabs>li>a {
+.nav-tabs>li>a
+{
     color: #959595;
-
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-color: #35b0e8;
-
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+{
+    color: #35b0e8;
 }
 
 .panel
@@ -244,7 +304,6 @@ color: #35b0e8;
 {
     color: #666;
 }
-
 
 .media
 {
@@ -294,6 +353,7 @@ color: #35b0e8;
     max-height: 400px;
 }
 
+
 .flexslider .slides
 {
     zoom: 1;
@@ -309,6 +369,8 @@ color: #35b0e8;
     margin-bottom: 15px;
 }
 
+
+
 /* CHOMDU Custom CSS
 *********************************/
 
@@ -321,7 +383,6 @@ color: #35b0e8;
 {
     padding-right: 5px;
 }
-
 
 .jumbotron.header
 {
@@ -348,7 +409,9 @@ color: #35b0e8;
     border: solid 1px #e4e4e4;
     color: #aaaaaa;
     margin-top: 10px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin-bottom: 10px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -393,6 +456,11 @@ color: #35b0e8;
     margin-bottom: 20px;
 }
 
+.imageHeader{
+    border-bottom: solid 5px #e4e4e4;
+
+}
+
 .homeBlock
 {
     border: solid 1px #e4e4e4;
@@ -413,7 +481,6 @@ color: #35b0e8;
     margin-top: 10px;
 }
 
-
 .homeBlock .badge
 {
     height: 45px;
@@ -424,7 +491,6 @@ color: #35b0e8;
     -o-border-radius: 0;
     -ms-border-radius: 0;
 }
-
 
 .homeBlock .radio label, .homeBlock .checkbox label
 {
@@ -440,12 +506,13 @@ color: #35b0e8;
 .recrutLiveConcept
 {
     padding-top: 10px;
+    border-top: solid 1px #e4e4e4;
 }
 
 .recrutLive
 {
     border-bottom: solid 1px #e4e4e4;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .recrutLive h5
@@ -458,13 +525,12 @@ color: #35b0e8;
     border-bottom: none;
 }
 
-
-.recrutLive .btn-default {
+.recrutLive .btn-default
+{
     color: #35b0e8;
     background-color: #fff;
     border-color: #35b0e8;
 }
-
 
 .recrutLive .btn-default:hover,.recrutLive .btn-default:focus,.recrutLive .btn-default:active,.recrutLive .btn-default.active,.recrutLive .open>.dropdown-toggle.btn-default
 {
@@ -472,7 +538,6 @@ color: #35b0e8;
     background-color: #eee;
     border-color: #35b0e8;
 }
-
 
 .jumbotron.blog
 {
@@ -489,7 +554,7 @@ color: #35b0e8;
     background-color: #f6f6f6;
 }
 
-.blog  img
+.blog img
 {
     border: solid 2px #fff;
 }
@@ -498,7 +563,6 @@ footer
 {
     padding-bottom: 10px;
     padding-top: 30px;
-
 }
 
 .fb img
@@ -555,16 +619,136 @@ footer ul li:last-child
     -ms-border-radius: 5px;
 }
 
-.chatMin{
+.panel-highlight
+{
+    background-color: #fdfdfd;
+    border-bottom: solid 1px #e4e4e4;
+    border-top: solid 1px #e4e4e4;
+}
+
+.panel-heading + .panel-highlight, .panel-highlight + .panel-highlight
+{
+    border-top: none;
+}
+
+.chatMin
+{
     position: fixed;
     bottom: 0px;
     right: 0px;
 }
 
-.chatMin .glyphicon{
-padding-right: 5px;
+.chatMin .glyphicon
+{
+    padding-right: 5px;
 }
 
+.chatRoom .panel-footer
+{
+    background-color: #f4f4f4;
+}
+
+.chatRoom .panel-highlight img
+{
+    width: 40px;
+    margin-right: 20px;
+}
+
+.chatRoom .panel-highlight h2
+{
+    display: inline;
+    margin-top: 5px;
+}
+
+.chatBody
+{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.usersBody
+{
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.chatMsg
+{
+    height: 30px;
+}
+
+.chatServerMsg
+{
+    height: 40px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px #e4e4e4;
+    border-top: solid 1px #e4e4e4;
+}
+
+.chatServerMsg img
+{
+    margin-right: 10px;
+}
+
+.chatServerMsg span
+{
+    line-height: 3em;
+}
+
+.chatRoom .panel-highlight .btn
+{
+    margin-top: 10px;
+}
+
+.chatRoom .panel-highlight .glyphicon
+{
+    padding-right: 5px;
+}
+
+.chatRoom .panel-highlight a
+{
+    font-size: 11px;
+    color: #b0b0b0;
+}
+
+.chatUsers h3
+{
+    display: inline;
+            padding-right:15px;
+}
+
+.chatUsers select
+{
+   display: inline;
+    width: 130px;
+    margin-top:10px;
+        margin-bottom:10px;
+
+}
+
+
+.chatUsers .btn-xs
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.chatUsers .btn-xs span
+{
+    margin-left: -1px;
+}
+
+.chatUsers p
+{
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.chatPseudo
+{
+    padding: 5px;
+}
 
 /* MediaQueries
 *********************************/
@@ -621,17 +805,15 @@ padding-right: 5px;
     }
 }
 
-
 @media (min-width:992px)
 {
     footer
     {
-          text-align: right;
+        text-align: right;
     }
-
-        .footerMenu
+    .footerMenu
     {
-          text-align: left;
+        text-align: left;
     }
-
 }
+

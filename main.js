@@ -9,6 +9,7 @@ $(function() {
 		directionNav: false,
 		slideshowSpeed: 4000,
 		animationSpeed: 500,  
+
     });
 
 });
