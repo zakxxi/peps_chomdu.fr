@@ -353,6 +353,7 @@ a, a:hover, a:focus
     max-height: 400px;
 }
 
+
 .flexslider .slides
 {
     zoom: 1;
@@ -367,6 +368,8 @@ a, a:hover, a:focus
 {
     margin-bottom: 15px;
 }
+
+
 
 /* CHOMDU Custom CSS
 *********************************/
@@ -551,7 +554,7 @@ a, a:hover, a:focus
     background-color: #f6f6f6;
 }
 
-.blog  img
+.blog img
 {
     border: solid 2px #fff;
 }
