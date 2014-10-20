@@ -607,7 +607,7 @@ footer ul li:last-child
     padding-right: 5px;
 }
 
-.chatRoom{
+.chatRoom, .chatUsers{
 margin-top: 20px;
 }
 .chatRoom .panel-footer
