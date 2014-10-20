@@ -363,13 +363,13 @@ a, a:hover, a:focus
     margin-right: 5px;
 }
 
-
-/* CHOMDU Custom CSS
-*********************************/
 .homeBlock .form-control, .homeBlock .btn, .homeBlock .radio
 {
     margin-bottom: 15px;
 }
+
+/* CHOMDU Custom CSS
+*********************************/
 
 .btn span
 {
@@ -451,6 +451,11 @@ a, a:hover, a:focus
 {
     background-color: #112c34;
     margin-bottom: 20px;
+}
+
+.imageHeader{
+    border-bottom: solid 5px #e4e4e4;
+
 }
 
 .homeBlock
@@ -633,11 +638,6 @@ footer ul li:last-child
 .chatMin .glyphicon
 {
     padding-right: 5px;
-}
-
-.chatRoom, .chatUsers
-{
-    margin-top: 20px;
 }
 
 .chatRoom .panel-footer
