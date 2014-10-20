@@ -363,13 +363,13 @@ a, a:hover, a:focus
     margin-right: 5px;
 }
 
+
+/* CHOMDU Custom CSS
+*********************************/
 .homeBlock .form-control, .homeBlock .btn, .homeBlock .radio
 {
     margin-bottom: 15px;
 }
-
-/* CHOMDU Custom CSS
-*********************************/
 
 .btn span
 {
