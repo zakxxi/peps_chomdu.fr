@@ -350,7 +350,7 @@ margin-bottom:20px;
 
 .btn-xs span
 {
-    padding-right: 5px;
+    padding-right: 0;
 }
 
 .jumbotron.header
@@ -452,6 +452,7 @@ margin-bottom:20px;
     -moz-border-radius: 0;
     -o-border-radius: 0;
     -ms-border-radius: 0;
+    border-radius: 0;
 }
 
 .homeBlock .radio label, .homeBlock .checkbox label
@@ -600,11 +601,6 @@ footer ul li:last-child
     right: 0px;
 }
 
-.chatMin .glyphicon
-{
-    padding-right: 5px;
-}
-
 .chatRoom .panel-footer
 {
     background-color: #f4f4f4;
@@ -701,11 +697,7 @@ footer ul li:last-child
     width: 20px;
     height: 20px;
     margin-left: 5px;
-}
-
-.chatUsers .btn-xs span
-{
-    margin-left: -1px;
+    padding: 0;
 }
 
 .chatUsers p
