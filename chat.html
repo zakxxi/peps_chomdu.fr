@@ -7,8 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="adrien revel for peps">
         <title>
-            CHOMDU.FR | Tchat
-</title>
+            CHOMDU.FR | Tchat</title>
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css">
         <!-- Flexslider core CSS -->
@@ -95,9 +94,13 @@
                     </div>
                 </div>
             </nav>
-            <div class="container-fluid hidden-xs slider imageHeader">
-                <img src="images/pages_header.png" class="img-responsive"/>
-            </div>
+            <div id="carouselPage" class="carousel slide hidden-xs" data-ride="carouselPage">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/pages_header.png" alt=""/>
+                    </div>
+                </div>
         </header>
         <main>
             <div class="container">
@@ -185,11 +188,14 @@
                     Connectés</h3>
                                 <select class="form-control input-sm">
                                     <option>
-                                        TOUS</option>
+                                        TOUS
+</option>
                                     <option>
-                                        Demadeurs</option>
+                                        Demadeurs
+</option>
                                     <option>
-                                        Employeurs</option>
+                                        Employeurs
+</option>
                                 </select>
                             </div>
                             <div class="usersBody">
