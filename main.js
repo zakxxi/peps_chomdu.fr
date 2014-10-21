@@ -2,7 +2,8 @@
 
 $(function() {
 
-/* CODE */
-
+$('.carousel').carousel({
+  interval: 4000,
+})
 
 });
