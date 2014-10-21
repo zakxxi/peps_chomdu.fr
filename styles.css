@@ -1,5 +1,3 @@
-
-
 /* CUSTOM FONTS
 *********************************/
 
@@ -238,15 +236,18 @@ a, a:hover, a:focus
     background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 47%,#efefef 100%);
 }
 
-.dropdown-menu {
+.dropdown-menu
+{
     font-size: 12px;
     background-color: #efefef;
     background: linear-gradient(to bottom, #ffffff 0%,#f7f7f7 47%,#efefef 100%);
     min-width: 250px;
-
-
 }
 
+.dropdown-menu
+{
+    min-width: 150px !important;
+}
 
 .dropdown-menu>li>a
 {
@@ -316,63 +317,31 @@ a, a:hover, a:focus
     border-bottom: none;
 }
 
-/* FlexSlider Custom CSS
+/* CAROUSEL 
+-------------------------------------------------- */
+.carousel{
+margin-bottom:20px;
+}
+
+.carousel.slide{
+    max-width: 2000px;
+    min-width: 320px;
+    overflow: hidden;
+}
+.carousel-inner{
+   width: 2000px;
+   left: 50%;
+   margin-left: -1000px;
+}
+
+/* CHOMDU Custom CSS
 *********************************/
-
-.flexslider
-{
-    margin: 0;
-    background: #fff;
-    border: none;
-    position: relative;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -o-border-radius: 0;
-    -ms-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -o-box-shadow: none;
-    -ms-box-shadow: none;
-    box-shadow: none;
-    zoom: 1;
-}
-
-.flex-viewport
-{
-    max-height: 2000px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.loading .flex-viewport
-{
-    max-height: 400px;
-}
-
-
-.flexslider .slides
-{
-    zoom: 1;
-}
-
-.carousel li
-{
-    margin-right: 5px;
-}
 
 .homeBlock .form-control, .homeBlock .btn, .homeBlock .radio
 {
     margin-bottom: 15px;
 }
 
-
-
-/* CHOMDU Custom CSS
-*********************************/
 
 .btn span
 {
@@ -381,7 +350,7 @@ a, a:hover, a:focus
 
 .btn-xs span
 {
-    padding-right: 5px;
+    padding-right: 0;
 }
 
 .jumbotron.header
@@ -450,15 +419,8 @@ a, a:hover, a:focus
     padding-top: 40px;
 }
 
-.slider
-{
-    background-color: #112c34;
-    margin-bottom: 20px;
-}
-
-.imageHeader{
+#carouselPage{
     border-bottom: solid 5px #e4e4e4;
-
 }
 
 .homeBlock
@@ -490,6 +452,7 @@ a, a:hover, a:focus
     -moz-border-radius: 0;
     -o-border-radius: 0;
     -ms-border-radius: 0;
+    border-radius: 0;
 }
 
 .homeBlock .radio label, .homeBlock .checkbox label
@@ -638,11 +601,6 @@ footer ul li:last-child
     right: 0px;
 }
 
-.chatMin .glyphicon
-{
-    padding-right: 5px;
-}
-
 .chatRoom .panel-footer
 {
     background-color: #f4f4f4;
@@ -711,32 +669,35 @@ footer ul li:last-child
     color: #b0b0b0;
 }
 
+.chatUserInfos
+{
+    padding-top: 15px;
+}
+
+.chatUserActions
+{
+    padding-top: 10px;
+}
 .chatUsers h3
 {
     display: inline;
-            padding-right:15px;
+    padding-right: 15px;
 }
 
 .chatUsers select
 {
-   display: inline;
+    display: inline;
     width: 130px;
-    margin-top:10px;
-        margin-bottom:10px;
-
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
 
 .chatUsers .btn-xs
 {
     width: 20px;
     height: 20px;
     margin-left: 5px;
-}
-
-.chatUsers .btn-xs span
-{
-    margin-left: -1px;
+    padding: 0;
 }
 
 .chatUsers p
