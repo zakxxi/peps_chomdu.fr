@@ -1,3 +1,5 @@
+
+
 /* CUSTOM FONTS
 *********************************/
 
@@ -174,6 +176,11 @@ a, a:hover, a:focus
     color: #35b0e8;
 }
 
+.text-success {
+
+color: #29b802;
+}
+
 .caret
 {
     margin-left: 8px;
@@ -319,29 +326,38 @@ a, a:hover, a:focus
 
 /* CAROUSEL 
 -------------------------------------------------- */
-.carousel{
-margin-bottom:20px;
+
+.carousel
+{
+    margin-bottom: 20px;
 }
 
-.carousel.slide{
+.carousel.slide
+{
     max-width: 2000px;
     min-width: 320px;
     overflow: hidden;
 }
-.carousel-inner{
-   width: 2000px;
-   left: 50%;
-   margin-left: -1000px;
+
+.carousel-inner
+{
+    width: 2000px;
+    left: 50%;
+    margin-left: -1000px;
 }
 
 /* CHOMDU Custom CSS
 *********************************/
 
+.noborder
+{
+    border: none;
+}
+
 .homeBlock .form-control, .homeBlock .btn, .homeBlock .radio
 {
     margin-bottom: 15px;
 }
-
 
 .btn span
 {
@@ -419,7 +435,8 @@ margin-bottom:20px;
     padding-top: 40px;
 }
 
-#carouselPage{
+#carouselPage
+{
     border-bottom: solid 5px #e4e4e4;
 }
 
@@ -472,34 +489,65 @@ margin-bottom:20px;
     border-top: solid 1px #e4e4e4;
 }
 
-.recrutLive
+.advert
 {
     border-bottom: solid 1px #e4e4e4;
     margin-bottom: 10px;
 }
 
-.recrutLive h5
+.advert h5
 {
     display: inline;
 }
 
-.recrutLive:last-child
+.advert:last-child
 {
     border-bottom: none;
 }
 
-.recrutLive .btn-default
+.advert .btn-default, .profileInfos .btn-default
 {
     color: #35b0e8;
     background-color: #fff;
     border-color: #35b0e8;
 }
 
-.recrutLive .btn-default:hover,.recrutLive .btn-default:focus,.recrutLive .btn-default:active,.recrutLive .btn-default.active,.recrutLive .open>.dropdown-toggle.btn-default
+.advert .btn-default:hover,.advert .btn-default:focus,.advert .btn-default:active,.advert .btn-default.active,.advert .open>.dropdown-toggle.btn-default
+, .profileInfos .btn-default:hover,.profileInfos .btn-default:focus,.profileInfos .btn-default:active,.profileInfos .btn-default.active,.profileInfos .open>.dropdown-toggle.btn-default
 {
     color: #35b0e8;
     background-color: #eee;
     border-color: #35b0e8;
+}
+
+.advert .btn-xs .glyphicon, .profileInfos .btn-xs .glyphicon
+{
+    padding-right: 5px;
+}
+
+.bookmark
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.bookmark.bookmarked
+{
+    border: none;
+    background-color: #fff;
+}
+
+.bookmark.bookmarked .glyphicon
+{
+    color: #e5ab1f;
+}
+
+.bookmark .glyphicon
+{
+    margin-left: 5px;
+    padding: 0;
 }
 
 .jumbotron.blog
@@ -589,9 +637,24 @@ footer ul li:last-child
     border-top: solid 1px #e4e4e4;
 }
 
+.panel-body-dark
+{
+    background-color: #f6f6f6;
+}
+
 .panel-heading + .panel-highlight, .panel-highlight + .panel-highlight
 {
     border-top: none;
+}
+
+.bgHeader
+{
+    height: 30px;
+    background-color: #f6f6f6;
+    background-image: url('images/header_panel.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
 }
 
 .chatMin
@@ -606,13 +669,13 @@ footer ul li:last-child
     background-color: #f4f4f4;
 }
 
-.chatRoom .panel-highlight img
+.userInfos img
 {
     width: 40px;
     margin-right: 20px;
 }
 
-.chatRoom .panel-highlight h2
+.userInfos h2
 {
     display: inline;
     margin-top: 5px;
@@ -630,25 +693,36 @@ footer ul li:last-child
     overflow-y: scroll;
 }
 
-.chatMsg
+.smallMsg
 {
     height: 30px;
 }
 
-.chatServerMsg
+.serverMsg
 {
-    height: 40px;
+    min-height: 40px;
     margin-bottom: 10px;
     border-bottom: solid 1px #e4e4e4;
     border-top: solid 1px #e4e4e4;
 }
 
-.chatServerMsg img
+.serverMsg + .serverMsg
+{
+    margin-top: 0;
+    border-top: none;
+}
+
+.serverMsg + .serverMsg:last-child
+{
+    border-bottom: none;
+}
+
+.serverMsg img
 {
     margin-right: 10px;
 }
 
-.chatServerMsg span
+.serverMsg span
 {
     line-height: 3em;
 }
@@ -678,6 +752,7 @@ footer ul li:last-child
 {
     padding-top: 10px;
 }
+
 .chatUsers h3
 {
     display: inline;
@@ -711,6 +786,33 @@ footer ul li:last-child
     padding: 5px;
 }
 
+.profilePanel
+{
+    margin-top: 20px;
+}
+
+.profileInfos
+{
+    min-height: 100px;
+    padding-top: 20px;
+}
+
+.profileInfos img
+{
+    padding-bottom: 10px;
+}
+
+.profileInfos p
+{
+    padding: 0;
+    margin: 0;
+}
+
+.profileInfos .btn
+{
+    margin-bottom: 20px;
+}
+
 /* MediaQueries
 *********************************/
 
@@ -719,6 +821,14 @@ footer ul li:last-child
     .navbar
     {
         margin-bottom: 20px;
+    }
+    .profilePanel
+    {
+        margin-top: 0;
+    }
+    .profileButtons
+    {
+        text-align: center;
     }
 }
 
