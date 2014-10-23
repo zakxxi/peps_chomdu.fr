@@ -181,6 +181,18 @@ a, a:hover, a:focus
 color: #29b802;
 }
 
+
+.badge {
+        display: inline-block;
+    min-width: 10px;
+    padding: 3px 4px;
+    font-size: 9px;
+    font-weight: 400;
+    color: #fff;
+     background-color: #db3d40;
+   
+    border-radius: 15px;
+}
 .caret
 {
     margin-left: 8px;
@@ -395,6 +407,8 @@ color: #29b802;
     color: #aaaaaa;
     margin-top: 10px;
     padding-top: 10px;
+        padding-bottom: 10px;
+
     padding-right: 30px;
     padding-left: 30px;
     margin-bottom: 10px;
@@ -429,6 +443,11 @@ color: #29b802;
     line-height: 2em;
     font-weight: 400;
 }
+
+.loginForm .badge {
+margin-left:5px;
+}
+
 
 .register
 {
