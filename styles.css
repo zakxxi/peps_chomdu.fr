@@ -472,34 +472,49 @@ margin-bottom:20px;
     border-top: solid 1px #e4e4e4;
 }
 
-.recrutLive
+.advert
 {
     border-bottom: solid 1px #e4e4e4;
     margin-bottom: 10px;
 }
 
-.recrutLive h5
+.advert h5
 {
     display: inline;
 }
 
-.recrutLive:last-child
+.advert:last-child
 {
     border-bottom: none;
 }
 
-.recrutLive .btn-default
+.advert .btn-default
 {
     color: #35b0e8;
     background-color: #fff;
     border-color: #35b0e8;
 }
 
-.recrutLive .btn-default:hover,.recrutLive .btn-default:focus,.recrutLive .btn-default:active,.recrutLive .btn-default.active,.recrutLive .open>.dropdown-toggle.btn-default
+.advert .btn-default:hover,.advert .btn-default:focus,.advert .btn-default:active,.advert .btn-default.active,.advert .open>.dropdown-toggle.btn-default
 {
     color: #35b0e8;
     background-color: #eee;
     border-color: #35b0e8;
+}
+
+.advert .btn-xs .glyphicon
+{
+    padding-right: 5px;
+}
+
+.bookmark {
+margin-left:5px;
+    width:30px;
+}
+
+.bookmark .glyphicon{
+margin-left:5px;
+    padding-right:0;
 }
 
 .jumbotron.blog
@@ -606,13 +621,13 @@ footer ul li:last-child
     background-color: #f4f4f4;
 }
 
-.chatRoom .panel-highlight img
+.userInfos img
 {
     width: 40px;
     margin-right: 20px;
 }
 
-.chatRoom .panel-highlight h2
+.userInfos h2
 {
     display: inline;
     margin-top: 5px;
@@ -630,25 +645,31 @@ footer ul li:last-child
     overflow-y: scroll;
 }
 
-.chatMsg
+.smallMsg
 {
     height: 30px;
 }
 
-.chatServerMsg
+.serverMsg
 {
-    height: 40px;
+    min-height: 40px;
     margin-bottom: 10px;
     border-bottom: solid 1px #e4e4e4;
     border-top: solid 1px #e4e4e4;
 }
 
-.chatServerMsg img
+.serverMsg + .serverMsg
+{
+    margin-top: 0;
+    border-top: none;
+}
+
+.serverMsg img
 {
     margin-right: 10px;
 }
 
-.chatServerMsg span
+.serverMsg span
 {
     line-height: 3em;
 }
